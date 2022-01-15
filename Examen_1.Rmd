@@ -1,0 +1,98 @@
+---
+title: "Primer Examen Métodos Cuantitativos"
+author: "Felipe Pérez Vargas"
+date: "4/3/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+### Ejecicio 1
+
+La empresa de Muebles Patito fabrica mesas y sillas de comedor. Cada silla necesitas 20 pies de tabla y 4 horas de trabajo. Cada mesa, 50 pies de tabla
+y 3 horas de trabajo. El fabricante tiene 3300 pies de tabla de madera disponible
+y un equipo humano capaz de proporcionar 380 horas de trabajo. Por último, el 
+fabricante ha determinado que hay una de $\$3$ por cada silla vendida y $\$6$ por cada mesa vendida. ¿Cuántas mesas y sillas se deben de producir para maximizar las utilidades, suponiendo que se vende todo el objeto producido?
+
+
+### Ejercicio 2
+
+La empresa de Muebles Patito fabrica mesas y sillas de comedor. Cada silla necesitas 20 pies de tabla y 4 horas de trabajo. Cada mesa, 50 pies de tabla
+y 3 horas de trabajo. El fabricante tiene 3150 pies de tabla de madera disponible
+y un equipo humano capaz de proporcionar 385 horas de trabajo. Por último, el 
+fabricante ha determinado que hay una de $\$2$ por cada silla vendida y $\$8$ por cada mesa vendida. ¿Cuántas mesas y sillas se deben de producir para maximizar las utilidades, suponiendo que se vende todo el objeto producido?
+
+### Ejercicio 3
+
+La empresa de Muebles Patito fabrica mesas y sillas de comedor. Cada silla necesitas 20 pies de tabla y 4 horas de trabajo. Cada mesa, 50 pies de tabla
+y 3 horas de trabajo. El fabricante tiene 3200 pies de tabla de madera disponible
+y un equipo humano capaz de proporcionar 390 horas de trabajo. Por último, el 
+fabricante ha determinado que hay una de $\$5$ por cada silla vendida y $\$5$ por cada mesa vendida. ¿Cuántas mesas y sillas se deben de producir para maximizar las utilidides, suponiendo que se vende todo el objeto producido?
+
+### Ejercicio 4
+
+La empresa de Muebles Patito fabrica mesas y sillas de comedor. Cada silla necesitas 20 pies de tabla y 4 horas de trabajo. Cada mesa, 50 pies de tabla
+y 3 horas de trabajo. El fabricante tiene 3000 pies de tabla de madera disponible
+y un equipo humano capaz de proporcionar 360 horas de trabajo. Por último, el 
+fabricante ha determinado que hay una de $\$8$ por cada silla vendida y $\$4$ por cada mesa vendida. ¿Cuántas mesas y sillas se deben de producir para maximizar las utilidades, suponiendo que se vende todo el objeto producido?
+
+### Ejercicio 5
+
+La empresa de Muebles Patito fabrica mesas y sillas de comedor. Cada silla necesitas 20 pies de tabla y 4 horas de trabajo. Cada mesa, 50 pies de tabla
+y 3 horas de trabajo. El fabricante tiene 3500 pies de tabla de madera disponible
+y un equipo humano capaz de proporcionar 400 horas de trabajo. Por último, el 
+fabricante ha determinado que hay una de $\$8$ por cada silla vendida y $\$2$ por cada mesa vendida. ¿Cuántas mesas y sillas se deben de producir para maximizar las utilidades, suponiendo que se vende todo el objeto producido?
+
+### Ejercicio 6
+
+Un lago de montaña en una parque nacional tiene en la primavera de cada año
+dos especies $S_{1}$ y $S_{2}$. El peso promedio de cada pez en el lago es de 4 libras para $S_{1}$ y de 2 libras para $S_{2}$. Se dispone de 2 tipos de alimentos, $F_{1}$ y $F_{2}$. Las necesidades promedio de un pez de especie  $S_{1}$ son de 1 unidad de $F_{1}$ y 3 unidades de $F_{2}$ diariamente. Las 
+necesidades correspondientes de $S_{2}$ son de 2 unidades de$F_{1}$ y 1 
+unidad de $F_{2}$. Si se cuenta con 500 unidades de $F_{1}$ y 900 unidades de
+$F_{2}$ por día, ¿Cómo debe de ser la cantidad de peces de cada clase para 
+maximizar al peso de pescado que se pueda producir?
+
+
+### Ejercicio 7
+
+Un lago de montaña en una parque nacional tiene en la primavera de cada año
+dos especies $S_{1}$ y $S_{2}$. El peso promedio de cada pez en el lago es de 3 libras para $S_{1}$ y de 3 libras para $S_{2}$. Se dispone de 2 tipos de alimentos, $F_{1}$ y $F_{2}$. Las necesidades promedio de un pez de especie  $S_{1}$ son de 1 unidad de $F_{1}$ y 3 unidades de $F_{2}$ diariamente. Las 
+necesidades correspondientes de $S_{2}$ son de 2 unidades de$F_{1}$ y 1 
+unidad de $F_{2}$. Si se cuenta con 1000 unidades de $F_{1}$ y 1800 unidades de
+$F_{2}$ por día, ¿Cómo debe de ser la cantidad de peces de cada clase para 
+maximizar al peso de pescado que se pueda producir?
+
+
+### Ejercicio 8
+
+Un lago de montaña en una parque nacional tiene en la primavera de cada año
+dos especies $S_{1}$ y $S_{2}$. El peso promedio de cada pez en el lago es de 2 libras para $S_{1}$ y de 4 libras para $S_{2}$. Se dispone de 2 tipos de alimentos, $F_{1}$ y $F_{2}$. Las necesidades promedio de un pez de especie  $S_{1}$ son de 1 unidad de $F_{1}$ y 3 unidades de $F_{2}$ diariamente. Las 
+necesidades correspondientes de $S_{2}$ son de 2 unidades de$F_{1}$ y 1 
+unidad de $F_{2}$. Si se cuenta con 1000 unidades de $F_{1}$ y 1000 unidades de
+$F_{2}$ por día, ¿Cómo debe de ser la cantidad de peces de cada clase para 
+maximizar al peso de pescado que se pueda producir?
+
+
+### Ejercicio 9
+
+Un lago de montaña en una parque nacional tiene en la primavera de cada año
+dos especies $S_{1}$ y $S_{2}$. El peso promedio de cada pez en el lago es de 3 libras para $S_{1}$ y de 2 libras para $S_{2}$. Se dispone de 2 tipos de alimentos, $F_{1}$ y $F_{2}$. Las necesidades promedio de un pez de especie  $S_{1}$ son de 1 unidad de $F_{1}$ y 3 unidades de $F_{2}$ diariamente. Las 
+necesidades correspondientes de $S_{2}$ son de 2 unidades de$F_{1}$ y 1 
+unidad de $F_{2}$. Si se cuenta con 1500 unidades de $F_{1}$ y 900 unidades de
+$F_{2}$ por día, ¿Cómo debe de ser la cantidad de peces de cada clase para 
+maximizar al peso de pescado que se pueda producir?
+
+
+### Ejercicio 10
+
+Un lago de montaña en una parque nacional tiene en la primavera de cada año
+dos especies $S_{1}$ y $S_{2}$. El peso promedio de cada pez en el lago es de 5 libras para $S_{1}$ y de 3 libras para $S_{2}$. Se dispone de 2 tipos de alimentos, $F_{1}$ y $F_{2}$. Las necesidades promedio de un pez de especie  $S_{1}$ son de 1 unidad de $F_{1}$ y 3 unidades de $F_{2}$ diariamente. Las 
+necesidades correspondientes de $S_{2}$ son de 2 unidades de$F_{1}$ y 1 
+unidad de $F_{2}$. Si se cuenta con 750 unidades de $F_{1}$ y 1500 unidades de
+$F_{2}$ por día, ¿Cómo debe de ser la cantidad de peces de cada clase para 
+maximizar al peso de pescado que se pueda producir?
+
+
+
+
+

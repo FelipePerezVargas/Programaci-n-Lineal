@@ -1,0 +1,146 @@
+---
+title: "Solución de sistemas de cuaciones usando el Método Gráfico"
+author: "Felipe Pérez Vargas"
+date: "17/2/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Antes de empezar con programación lineal debemos conocer compodemos graficar un sistema de ecuaciones en dos dimensiones. Esto lo haremos usando el software libre R.
+
+
+Ejemplo 
+
+Tenemos el siguiente sistema de ecuaciones
+$$
+\begin{eqnarray}
+ x_{1}+3x_{2} = 6 \\
+2x_{1}- x_{2} = 5 \\
+3x_{1}+2x_{2} = 11 
+\end{eqnarray}
+$$
+Lo que vamos a hacer a continuación es graficar las tres ecuaciones en el mismo plano, por experiencias vamos a utilizar el rengo de $x_{1}=x_{2}=[-7,7]$
+
+
+Primero generamos una sucesión de números enteros con el comando seq() que esta compuesto por el límite inferior, límite superior y el paso en el que vamos a generar esos número. A continuación se muestra la instrucción:
+
+```{r}
+x1<-seq(-7,7,by=1);x1
+
+
+```
+Una vez que generada la secuencia de números prodemos a despejar $x_{2}$ de cada una de las ecuaciones, resultando como 
+
+
+$$
+\begin{eqnarray}
+ x_{21} &=& \frac{6-x_{1}}{3}&=&2-\frac{x_{1}}{3} \\
+ x_{22} &=& -5 + 2x_{1} \\
+ x_{23} &=& \frac{11- 3x_{1}}{2}
+\end{eqnarray}
+$$
+
+Ahora vamos a realizar el el gráfico de la primera ecuación. Para esto vamos a ocupar el comando plot y se explicara durante la clase 
+
+```{r}
+# Gráficamos la primera ecuación x21 
+
+x21<-(6-x1)/3;x21
+plot(x1,x21, type='l', col='red', main='Sistema de ecuaciones',
+     xlab = 'x1', ylab = 'x2')
+# Ahora graficamos con x22
+x22<- -5+2*x1
+# la Agregamos con el comando lines 
+lines(x1,x22, col='blue')
+#Ahora agregamos la tercera ecuación x23
+x23<-(11-3*x1)/2
+# la Agregamos con el comando lines 
+lines(x1,x23, col='green')
+# Agregamos las líneas en el eje cero con el comando abline 
+abline(h=0, v=0, lty=3, col='gray')
+# Podemos agregar etiquetas para cada ecuación 
+legend('topleft',legend=c('Ecuación 1','Ecuación 2', 'Ecuación 3'),
+ pch=c(1,2, 3),col=c('blue','red','green'))
+
+
+```
+Graficamente podemos determinar lo solución del sistema conviertiendolo a un sistema matricial y después aplicamos el comando solve para poder encontrar la solución del sistema.
+
+
+```{r}
+# Como son tres ecuaciones y dos incógnitas solo se necesitan dos ecuaciones y se pueden
+# hacer las conbinaciones 12, 13, 23
+A<-matrix(c(1, 3,
+            2,-1), nrow = 2, ncol = 2, byrow = TRUE)#;A
+#Ahora generamos el vector b
+b<-c(6,5)
+S<-solve(A,b)
+# Ejercicio resuelve el sistema 13 y 23 y comprueba el resultado 
+
+```
+
+Una vez que encontramos el valor de cada una de las variable podemos agregar el punto donde 
+el sistema tiene solución única
+
+
+```{r}
+# Gráficamos la primera ecuación x21 
+x21<-(6-x1)/3
+plot(x1,x21, type='l', col='red', main='Sistema de ecuaciones',
+     xlab = 'x1', ylab = 'x2')
+# Ahora graficamos con x22
+x22<- -5+2*x1
+# la Agregamos con el comando lines 
+lines(x1,x22, col='blue')
+#Ahora agregamos la tercera ecuación x23
+x23<-(11-3*x1)/2
+# la Agregamos con el comando lines 
+lines(x1,x23, col='green')
+# Agregamos las líneas en el eje cero con el comando abline 
+abline(h=0, v=0, lty=3, col='gray')
+# Podemos agregar etiquetas para cada ecuación 
+legend('topleft',legend=c('Ecuación 1','Ecuación 2', 'Ecuación 3'),
+ pch=c(1,2, 3),col=c('blue','red','green'))
+points(S[1], S[2], cex=1.5, pch=19)
+
+```
+
+Podemos hacer un grafico más especializado usando el paquete ggplot2. Para esto debemos crear un dataframe
+
+<!-- ```{r, results='asis', message = FALSE, error = FALSE, warning= FALSE} -->
+<!--  require(ggplot2) -->
+<!-- require(plotly) -->
+<!-- B<-matrix(c(x1, x21,x22,x23), ncol=4) -->
+<!-- B<-data.frame(B) -->
+<!-- p<-ggplot(B, aes(x=x1)) + -->
+<!--   geom_line(aes(y=x21), color = "red") + -->
+<!--   geom_line(aes(y=x22), color = "blue") + -->
+<!--   geom_line(aes(y=x23), color = "green") + -->
+<!--   labs(x = "x1", y = "x2", title = 'Solución de Ecuaciones por el Método Gráfico') -->
+
+<!-- ggplotly(p) -->
+
+<!-- ``` -->
+
+Ahora intenta graficar las dos ecuaciones del problema planteado:
+
+$$  
+\begin{eqnarray}
+ 6x_{1}+12x_{2} & \leq & 120\\
+ 8x_{1}+4x_{2} &\leq & 64\\
+ x_{1}, x_{2} &\geq & 0
+\end{eqnarray}
+$$
+
+
+
+
+
+
+
+
+
+
+
+

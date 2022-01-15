@@ -1,0 +1,166 @@
+---
+title: "Programación Lineal"
+author: "Felipe Pérez Vargas"
+date: "08/02/2021"
+output:
+  html_document: 
+    toc: yes
+  self_contained: True
+theme: united
+highlight: textmate
+number_sections: yes
+# runtime: shiny
+---
+
+## Temas y Subtemas {.tabset .tabset-fade .tabset-pills}
+
+### OBJETIVO DEL CURSO
+
+_______________________________________________________________
+
+
+Al término del curso, el alumno aplicará modelos cuantitativos lineales, mediante el estudio de investigación de operaciones, para optimizar el comportamiento de los sistemas de manufactura y de servicios.
+
+
+____________________________________________________________________________
+
+
+### I LA INTRODUCCIÓN A LA INVESTIGACIÓN DE OPERACIONES
+
+______________________________________________________________________________
+
+
+* 1.1  Las definiciones y evolución histórica de investigación de operaciones
+* 1.2  La clasificación de modelos 
+* 1.3  El planteamiento y desarrollo de modelos cuantitativos 
+
+
+______________________________________________________________________________
+
+
+### II LA PROGRAMACIÓN LINEAL
+
+______________________________________________________________________________
+
+
+* 2.1  Las características y definiciones de programación lineal
+* 2.2  La estructura y planteamiento de modelos de programación lineal 
+* 2.3  La representación gráfica de modelos de programación lineal
+* 2.3.1  La gráfica de desigualdades
+* 2.3.2  El método de solución gráfica
+* 2.3.3  La solución gráfica por computadora
+* 2.4  El método simplex
+* 2.4.1  Los conceptos generales del método simplex
+* 2.4.2  El método simplex en forma  tabular
+* 2.4.3  La interpretación de resultados
+* 2.4.4  La solución de modelos de minimización por  el método simplex
+* 2.5  La solución por computadora de modelos de programación lineal
+
+
+
+______________________________________________________________________________
+
+
+
+### III LA TEORÍA DE LA DUALIDAD Y EL ANÁLISIS DE SENSIBILIDAD 
+
+______________________________________________________________________________
+
+* 3.1  El análisis de sensibilidad
+* 3.1.1  Los cambios en los coeficientes de la función objetivo de variables no básicas
+* 3.1.2  Los cambios en los coeficientes de la función objetivo de variables  básicas
+* 3.1.3  Los cambios en el nivel de recursos
+* 3.1.4  Los cambios obligados en variables
+* 3.2 La dualidad
+* 3.2.1  El planteamiento dual
+* 3.2.2  La relación entre la solución óptima primaria y la solución óptima dual
+* 3.2.3  La interpretación económica dual
+* 3.2.4  Los resultados obtenidos en computadora  en el análisis de sensibilidad  
+
+
+_____________________________________________________________________________
+
+### IV LAS REDES DE OPTIMIZACIÓN
+_____________________________________________________________________________
+
+
+* 4.1  La introducción al estudio de redes
+* 4.2  La terminología de redes
+* 4.3  Los tipos básicos de problemas de redes
+* 4.4  El problema de transbordo
+* 4.5  El problema de la ruta más corta
+* 4.6  El problema del árbol expandido mínimo
+* 4.7  El problema de flujo máximo
+* 4.8  El software  para resolver  problemas de  redes
+
+
+_____________________________________________________________________________
+
+
+
+### V LA ADMINISTRACIÓN DE LOS INVENTARIOS
+____________________________________________________________________________
+
+* 5.1  Los conceptos y terminología
+* 5.2  El modelo de cantidad económica a pedir
+* 5.3  El modelo de tamaño económico de producción
+* 5.4  El modelo de inventarios con escases planeada
+* 5.5  El modelo de inventarios de un sólo periodo con demanda probabilística
+* 5.6  El modelo de revisión periódica con demanda probabilística
+* 5.7  El modelo de descuento por cantidad
+* 5.8  El modelo del vendedor de periódico
+_____________________________________________________________________________
+
+
+### VI LOS PROBLEMAS ESPECIALES DE PROGRAMACIÓN LINEAL
+____________________________________________________________________________
+
+* 6.1  El método de transporte
+* 6.1.1  Tipos de modelos de transporte
+* 6.1.2  Métodos de solución
+* 6.2  El problema de asignación
+* 6.3  El software para la solución del problemas de transporte y de asignación
+
+
+
+_____________________________________________________________________________
+
+
+### BIBILOGRAFÍA 
+
+_____________________________________________________
+
+
+
+_______________________________________________________________________________
+
+
+* Saúl L. Gass. (1973). Guía Ilustrada para la Programación Lineal. Compañía Editorial Continental.
+
+_______________________________________________________________
+
+
+* Frederick S. Hillier. (2010). Introducción a la Investigación de Operaciones. Mc Graw Hill.
+
+
+________________________________________________________________
+
+### ACREDITACIÓN 
+
+| Rubrica                                           |Porcentaje| 
+|:--------------------------------------------------|---------:|
+| Trabajo en clase y participación                  |30 $\%$   | 
+| Tareas                                            |20 $\%$   |
+| Examen Escrito                                    |40 $\%$   | 
+| Míni proyectos                                    |10 $\%$   |
+
+### SOFTWARE 
+
+Los software y/o paquetes estadísticos que se van a utilizar durante el curso son los siguientes: 
+
+**[R Project](https://www.r-project.org)**<br>
+**[R Studio](https://rstudio.com/products/rstudio/download/)**<br>
+**[Power BI Desktop](https://powerbi.microsoft.com/es-es/desktop/)**<br>
+**Excel**<br>
+
+

@@ -1,0 +1,111 @@
+---
+title: "Examen 1  412"
+author: "Felipe Pérez Vargas"
+date: "11/3/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+1.- Una Empresa dedicada a la elaboración de caramelos produce dos clases de  dulces a partir de caramelo y chocolate. Cada pieza pesa 4 gramos. La Barra A contiene 3 gramos de caramelo y 1 gramos de chocolate la Barra B contiene 2 gramos de caramelo y 2 gramos de chocolate. La empresa tiene en almacen 2 kg de chocolate y 1.8 kg de de caramelo. La Barra A se vende en 3 pesos y la Barra B se vende a 5 pesos. ¿Cuántas unidades debe de producir de cada una para maximizar los ingresos de la empresa?
+
+```{r}
+
+# z=3x1+5x2
+# 3x1+2x2 <= 1800   Caramelo en gramos 
+# Ecuación 1
+#           |  x1  |  x2  |  Maximización de z=3x1+5x2  
+# ------------------------------------------
+# Intecepto |  0   |  900 |   z1=3(0)+2(900)=1800  
+# ------------------------------------------
+# Raíz      | 600  |  0   |   z2=3(600)+2(0)=1800
+# ---------------------------
+
+# 1x1+2x2 <= 2000    Chocolate en gramos
+# Ecuación 1
+#            |  x1  |  x2  | Maximización de z=3x1+5x2 
+# ---------------------------
+# Intercepto |  0   | 1000 | 3(0)+2(1000)=2000
+# ---------------------------
+# Raíz       | 2000 |  0   | 3(2000)+2(0)=6000
+# ---------------------------
+
+# Evaluación en la función objetivo  con la solución del sistema
+z<-3*S1[1]+2*S1[2];z #NO cumple las restricciones
+# z=3x1+5x2
+# 3(6000) <= 1800   Caramelo en gramos tampoco sería solución porque producirlo no tendría insumos suficientes
+
+
+
+# Tienes una solución que viola las restricciones del modelo
+
+# Una solución es analizar los 4 casos con los valores del 
+#  Intercepto y la raíz 
+
+
+# Ax=b
+library(matlib)
+A<-matrix(c(3,2,
+            1,2), ncol = 2, nrow = 2, byrow = TRUE);A
+b<-c(1800,2000);b
+S1<-solve(A,b);S1
+showEqn(A,b)
+plotEqn(A,b)
+
+```
+
+
+
+
+2.- Dos alimentos consisten exclusivamente de carbohidratos y proteínas. El alimento 1 cuesta $\$50$ pesos el kilo y contiene 90% de carbohidratos. El alimento B cuesta $\$10$ pesos el kilo   y contiene el 60% de carbohidratos. En el almacen se cuentan con 200 kg de Carbohidratos y 70 kg de proteínas. ¿Cuánto se debe de producir de cada alimento para obtener el máximo beneficio?
+
+```{r}
+
+# z=50x1+10x2
+#0.9x1+0.6x2 <= 200 kg Carbohidratos 
+#0.1x1+0.4x2 <= 70  kg Proteínas
+
+A<-matrix(c(0.9,0.6,
+            0.1,0.4), ncol = 2, nrow = 2, byrow = TRUE);A
+b<-c(200,70);b
+S1<-solve(A,b);S1
+showEqn(A,b)
+plotEqn(A,b)
+
+
+```
+
+
+3.- Una Empresa dedicada a la elaboración de caramelos produce dos clases de dulces a partir de caramelo y chocolate. Cada pieza pesa 5 gramos. La Barra A contiene 3 gramos de caramelo y 2 gramos de chocolate la Barra B contiene 2 gramos de caramelo y 3 gramos de chocolate. La empresa tiene en almacen 2.1 kg de chocolate y 1.9 kg de de caramelo. La Barra A se vende en  4 pesos y la Barra B se vende a 4.5 pesos. ¿Cuántas unidades debe de producir de cada una para maximizar los ingresos de la empresa?
+```{r}
+
+# z=4x1+4.5x2
+#3x1+2x2 <= 1900   kg caramelo 
+#2x1+3x2 <= 2100  kg Chocolate
+
+A<-matrix(c(3,2,
+            2,3), ncol = 2, nrow = 2, byrow = TRUE);A
+b<-c(1900,2100);b
+S1<-solve(A,b);S1
+showEqn(A,b)
+plotEqn(A,b)
+```
+
+
+
+4.- Dos alimentos consisten exclusivamente de carbohidrato y proteínas. El alimento 1 cuesta $\$40$ pesos el kilo y contiene 80% de carbohidratos. El alimento B cuesta $\$20$ pesos el kilo   y contiene el 70% de carbohidratos. En el almacen se cuentan con 205 kg de Carbohidratos y 75 kg de proteínas. ¿Cuánto se debe de producir de cada alimento para obtener el máximo beneficio?
+
+5.- Una Empresa dedicada a la elaboración de caramelos produce dos clases de de curlces a partir de caramelo y chocolate. Cada pieza pesa 6 gramos. La Barra A contiene 3 gramos de caramelo y 3 gramos de chocolate la Barra B contiene 2 gramos de caramelo y 4 gramos de chocolate. La empresa tiene en almacen 2 kg de chocolate y 2.8 kg de de caramelo. La Barra A se vende en  3 pesos y la Barra B se vende a 5 pesos. ¿Cuántas unidades debe de producir de cada una para maximizar los ingresos de la empresa?
+
+6.- Dos alimentos consisten exclusivamente de carbohidrato y proteínas. El alimento 1 cuesta $\$60$ pesos el kilo y contiene 80% de carbohidratos. El alimento B cuesta $\$20$ pesos el kilo   y contiene el 50% de carbohidratos. En el almacen se cuentan con 200 kg de Carbohidratos y 100 kg de proteínas. ¿Cuánto se debe de producir de cada alimento para obtener el máximo beneficio?
+
+7.- Una Empresa dedicada a la elaboración de caramelos produce dos clases de de curlces a partir de caramelo y chocolate. Cada pieza pesa 10 gramos. La Barra A contiene  7 gramos de caramelo y 3 gramos de chocolate la Barra B contiene 2 gramos de caramelo y 8 gramos de chocolate. La empresa tiene en almacen 2.5 kg de chocolate y 2.0 kg de de caramelo. La Barra A se vende en 8 pesos y la Barra B se vende a 5 pesos. ¿Cuántas unidades debe de producir de cada una para maximizar los ingresos de la empresa?
+
+8.- Dos alimentos consisten exclusivamente de carbohidrato y proteínas. El alimento 1 cuesta $\$60$ pesos el kilo y contiene 40% de carbohidratos. El alimento B cuesta $\$30$ pesos el kilo   y contiene el 50% de carbohidratos. En el almacen se cuentan con 250 kg de Carbohidratos y 80 kg de proteínas. ¿Cuánto se debe de producir de cada alimento para obtener el máximo beneficio?
+
+9.- Una Empresa dedicada a la elaboración de caramelos produce dos clases de de curlces a partir de caramelo y chocolate. Cada pieza pesa 6 gramos. La Barra A contiene  3 gramos de caramelo y 3 gramos de chocolate la Barra B contiene 2 gramos de caramelo y 4 gramos de chocolate. La empresa tiene en almacen 3.5 kg de chocolate y 3.0 kg de de caramelo. La Barra A se vende en 6 pesos y la Barra B se vende a 5 pesos. ¿Cuántas unidades debe de producir de cada una para maximizar los ingresos de la empresa?
+
+10.- Dos alimentos consisten exclusivamente de carbohidrato y proteínas. El alimento 1 cuesta $\$90$ pesos el kilo y contiene 75% de carbohidratos. El alimento B cuesta $\$60$ pesos el kilo   y contiene el 30% de carbohidratos. En el almacen se cuentan con 270 kg de Carbohidratos y 100 kg de proteínas. ¿Cuánto se debe de producir de cada alimento para obtener el máximo beneficio?
+
+
